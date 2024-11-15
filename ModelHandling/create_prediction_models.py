@@ -1,6 +1,6 @@
 # This code provides the functions to create, train, and save different models of neural networks
 
-import prediction_models
+from ModelHandling import prediction_models
 
 
 def Create_NN(data_path, name, num_of_labels, instruments=False):

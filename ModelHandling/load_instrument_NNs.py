@@ -1,4 +1,4 @@
-import prediction_models
+from ModelHandling import prediction_models
 
 
 def Load_NN(num_of_labels):

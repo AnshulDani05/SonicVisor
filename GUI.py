@@ -6,12 +6,10 @@ from PyQt5.QtCore import Qt
 import pygame  # Pygame is a GUI module ideal for video games / graphic displays
 from pygame import mixer  # Allows audio playback within the Pygame framework
 import numpy as np  # Library for numerical computing
-import Instrument_display  # Custom module to display instruments
-import Genre_display  # Custom module to display genre information
+from DisplayWindows import Genre_display, Instrument_display
 
-import prediction_data  # Custom module to break down audio input into format for neural network
-import load_genre_NNs  # Custom module to load genre neural network models
-import load_instrument_NNs  # Custom module to load instrument neural network models
+from ProcessData import prediction_data  # Custom module to break down audio input into format for neural network
+from ModelHandling import load_genre_NNs, load_instrument_NNs  # Custom module to load genre neural network models  # Custom module to load instrument neural network models
 import os  # Module for interacting with file paths and directories
 import AUDIO_VIS  # Custom module to display audio visualiser
 
